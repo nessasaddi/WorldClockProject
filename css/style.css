@@ -150,7 +150,7 @@ a:hover {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 428px) {
 
   .title {
     padding-top: 40px;
@@ -165,8 +165,7 @@ a:hover {
     margin-top: -18px;
   }
   .container {
-    max-width: 100%;
-    margin: auto;
+    padding: 10px;
   }
   .containercontents {
     margin-left: 30px;
