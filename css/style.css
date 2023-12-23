@@ -117,7 +117,7 @@ a:hover {
   color: rgb(15, 149, 169);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 
   .title {
     padding-top: 40px;
@@ -144,6 +144,39 @@ a:hover {
   }
   .time {
     font-size: 40px;
+  }
+  .time small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .title {
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    margin-top: -18px;
+  }
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .containercontents {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .date {
+    font-size: 10px;
+  }
+  .time {
+    font-size: 25px;
   }
   .time small {
     font-size: 12px;
