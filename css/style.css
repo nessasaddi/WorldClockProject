@@ -1,32 +1,36 @@
 body {
-  background: linear-gradient(to top, #e8e8e8, #d8d8d8, #ffffff);
+  background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%);
   height: 100vh;
   font-family: sans-serif;
 }
 
 h1 {
-  color: rgb(10, 127, 20);
+  color: rgb(10, 111, 127);
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  margin-top: 50px;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: rgb(64, 64, 64);
-  margin: 0 0 5px;
-  font-size: 38px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
   letter-spacing: -1px;
 }
 
+h2 {
+  color: rgb(77, 77, 77);
+  margin: 0 0 5px;
+  font-size: 38px;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
 h3 {
-  color: black;
+  color: rgba(0, 0, 0, 0.406);
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: -20px;
+  margin-top: -25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 select {
@@ -35,17 +39,28 @@ select {
   font-size: 15px;
   border-radius: 40px;
   padding: 10px;
-  border: 0px;
+  border: 1px solid rgb(15, 149, 169);
+}
+
+.title {
+  padding-top: 40px;
+  animation: fadeIn 1s ease-in;
 }
 
 .container {
   max-width: 600px;
-  margin: 60px auto;
-  background: rgba(245, 245, 245, 0.371);
-  border: 2px solid rgb(238, 238, 238);
+  margin: auto;
+  animation: fadeIn .5s ease-in;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.containercontents {
+  background: rgba(245, 245, 245, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.513);
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 75px;
+  box-shadow: rgba(100, 100, 111, 0.128) 0px 7px 29px 0px;
+  border-radius: 50px;
 }
 
 .city {
@@ -62,21 +77,21 @@ select {
 
 .date {
   opacity: 0.5;
-  font-size: 13px;
+  font-size: 11px;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .time {
-  font-size: 48px;
-  font-weight: bold;
-  color: rgb(64, 64, 64);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(77, 77, 77);
+  font-family: 'DM Sans', sans-serif;
 }
 
 .time small {
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(64, 64, 64);
   vertical-align: middle;
   line-height: 48px;
@@ -85,33 +100,52 @@ select {
 
 footer {
   text-align: center;
-  font-size: 13px;
-  color: rgb(10, 127, 20);
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.406);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px; 
+  font-weight: 300;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+  color: rgb(10, 111, 127);
 }
 
 a:hover {
-  color: green;
+  color: rgb(15, 149, 169);
 }
 
+@media (max-width: 700px) {
 
-@media only screen and (max-width: 700px) {
-
+  .title {
+    padding-top: 40px;
+  }
   h1 {
     font-size: 30px;
   }
   h2 {
     font-size: 28px;
   }
+  h3 {
+    margin-top: -18px;
+  }
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .containercontents {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   .date {
-    font-size: 11px;
+    font-size: 10px;
+  }
+  .time {
+    font-size: 40px;
   }
   .time small {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
