@@ -177,4 +177,7 @@ a:hover {
   .time small {
     font-size: 12px;
   }
+  .footer {
+    font-size: 9px;
+  }
 }
